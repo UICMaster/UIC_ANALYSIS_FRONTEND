@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>UIC Analytics | Player DNA & Scouting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js for Radar Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- NAV BAR (Copied from Main Site) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-state" style="display: none;">
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="https://ultrainstinctcrew.com/" class="logo-module">
+                <div class="logo-text">
+                    <span class="brand-name">UIC</span>
+                    <span class="brand-sub">ANALYTICS</span>
+                </div>
+            </a>
+            <div class="nav-separator desktop-only"></div>
+            <label for="nav-toggle" class="nav-burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+            <div class="nav-deck">
+                <ul class="nav-list">
+                    <li><a href="https://ultrainstinctcrew.com/" class="nav-link">Main Site ↗</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN DASHBOARD -->
+    <main class="container section-pad" style="margin-top: 90px;">
+        <div class="grid-12">
+            
+            <!-- LEFT COLUMN: LEADERBOARD -->
+            <div class="col-8 card card--hud card--scan">
+                <h2>🏆 Power Rankings (UPS)</h2>
+                <div class="table-responsive">
+                    <table class="uic-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Spieler</th>
+                                <th>Rolle</th>
+                                <th>Team</th>
+                                <th>UPS Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <!-- JS Injects Data Here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: PLAYER DNA -->
+            <div class="col-4 card card--hud" id="scouting-panel">
+                <div class="empty-state" id="empty-state">
+                    <p style="color: var(--text-muted); font-style: italic; text-align: center; margin-top: 50px;">
+                        [ Wähle einen Spieler in der Tabelle, um die DNA zu scannen ]
+                    </p>
+                </div>
+                
+                <div class="player-profile hidden" id="player-profile">
+                    <h2 id="dna-name" style="margin-bottom: 0;">PLAYER</h2>
+                    <p id="dna-subtitle" style="color: var(--secondary); font-family: var(--font-head); font-size: 0.8rem; margin-bottom: 1rem; letter-spacing: 2px;">ROLE | TEAM</p>
+                    
+                    <div style="position: relative; height: 300px; width: 100%; margin-bottom: 1.5rem;">
+                        <canvas id="dnaChart"></canvas>
+                    </div>
+
+                    <!-- UIC Data Tags from your existing CSS -->
+                    <div class="data-tags-grid" style="justify-content: center;">
+                        <div class="data-tag">
+                            <span class="dt-label">CARRY INDEX</span>
+                            <span class="dt-value" id="val-ci">--</span>
+                        </div>
+                        <div class="data-tag">
+                            <span class="dt-label">TACTICIAN</span>
+                            <span class="dt-value" id="val-ti">--</span>
+                        </div>
+                        <div class="data-tag" id="vi-tag">
+                            <span class="dt-label">VANGUARD</span>
+                            <span class="dt-value" id="val-vi">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
