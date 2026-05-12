@@ -1,0 +1,64 @@
+/* PASTE YOUR EXISTING CSS CODE HERE ABOVE THIS LINE */
+
+/* =========================================
+   6. ANALYTICS HUB SPECIFIC STYLES
+   ========================================= */
+
+/* Table Styling matching the HUD aesthetic */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: var(--space-sm);
+}
+
+.uic-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-body);
+    text-align: left;
+}
+
+.uic-table th {
+    padding: 12px 15px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--text-muted);
+    font-family: var(--font-head);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.uic-table td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Sci-fi Hover Effect for rows */
+.uic-table tbody tr:hover td {
+    background-color: rgba(0, 240, 255, 0.08);
+    color: var(--primary);
+}
+
+.uic-table tbody tr:hover td:first-child {
+    border-left: 3px solid var(--primary);
+}
+
+.player-tagline {
+    color: var(--text-muted);
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.score-highlight {
+    color: var(--primary);
+    font-family: var(--font-head);
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+/* Hide utility class */
+.hidden { display: none !important; }
