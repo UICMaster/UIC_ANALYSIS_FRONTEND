@@ -2,14 +2,14 @@ name: Generate LHM CSV Export
 
 on:
   schedule:
-    - cron: '0 2 * * *' # Runs automatically every day at 02:00 UTC
-  workflow_dispatch:    # Allows you to trigger it manually
+    # Runs automatically at the start of every hour (e.g., 1:00, 2:00, 3:00)
+    - cron: '0 * * * *' 
+  workflow_dispatch:
 
 jobs:
   build-and-commit:
     runs-on: ubuntu-latest
     
-    # Grants the Action permission to push the generated file back to your repo
     permissions:
       contents: write 
 
@@ -23,14 +23,13 @@ jobs:
           python-version: '3.x'
 
       - name: Convert JSON to CSV
-        run: python json_to_csv.py
+        run: python py/json_to_csv.py
 
       - name: Commit and Push CSV
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add players.csv
+          git add data/players.csv
           
-          # Only commits if there is new data to save
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update LHM players.csv" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update LHM players.csv in data folder" && git push)
