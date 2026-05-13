@@ -1,6 +1,7 @@
 import json
 import csv
 import re
+import os
 
 def clean_username(name):
     """Removes team prefixes and uppercases the text."""
@@ -8,13 +9,23 @@ def clean_username(name):
     return cleaned.upper().strip()
 
 def export_to_csv():
-    with open('teams.json', 'r', encoding='utf-8') as f:
+    # Input file is now located in the data folder
+    input_file = os.path.join('data', 'teams.json')
+    
+    # Output file remains in the data folder
+    output_dir = 'data'
+    output_file = os.path.join(output_dir, 'players.csv')
+
+    # Ensure the data/ folder exists (just in case)
+    os.makedirs(output_dir, exist_ok=True)
+
+    with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     # Exact headers from your LHM example file
     headers = ["Username", "SteamID", "First Name", "Last Name", "Country Code", "Team Name"]
 
-    with open('players.csv', 'w', newline='', encoding='utf-8') as f:
+    with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(headers)
 
