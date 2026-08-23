@@ -1,18 +1,16 @@
 Username,SteamID,First Name,Last Name,Country Code,Team Name
 SPEEDY,UIC Speedy#EUW,,,DE,UIC Prime
 NIKI,UIC Niki#AMB,,,DE,UIC Prime
-SHENYCRANE,UIC Shenycrane#Vugel,,,DE,UIC Prime
+BAUMI,UIC Baumi#123,,,DE,UIC Prime
 GIANI,UIC Giani#999,,,DE,UIC Prime
 BAGUETTO,UIC Baguetto#R3kt,,,DE,UIC Prime
-BAUMI,UIC Baumi#123,,,DE,UIC Prime
-FROZENHANDS,UIC FrozenHands#MID,,,DE,UIC Prime
 ,,,,,
-NUTTY,UIC Nutty#Biggu,,,DE,UIC Basilisk
-PANGER,UIC Panger#JGA,,,DE,UIC Basilisk
-LANZUS,UIC Lanzus#AEGIS,,,DE,UIC Basilisk
-VORACITY,UIC Voracity#0711,,,DE,UIC Basilisk
-PEAPUFFER,UIC PeaPuffer#PUFFY,,,DE,UIC Basilisk
-MAKZKOVICH,MakZkovich#222,,,DE,UIC Basilisk
+NUTTY,UIC Nutty#Biggu,,,DE,UIC Hydra
+PANGER,UIC Panger#JGA,,,DE,UIC Hydra
+LANZUS,UIC Lanzus#AEGIS,,,DE,UIC Hydra
+VORACITY,UIC Voracity#0711,,,DE,UIC Hydra
+PEAPUFFER,UIC PeaPuffer#PUFFY,,,DE,UIC Hydra
+MAKZKOVICH,MakZkovich#222,,,DE,UIC Hydra
 ,,,,,
 RAYANDO07,UIC Rayando07#Help,,,DE,UIC Baddie
 TTVXAVERTSELTSAM,TTVXavertseltsam#Mr X,,,DE,UIC Baddie
@@ -23,7 +21,7 @@ QVY,UIC Qvy#rusty,,,DE,UIC Baddie
 BALLAS,UIC Ballas#Wisp,,,DE,UIC Tempest
 KURT SCHLUSS,UIC Kurt Schluss#1337,,,DE,UIC Tempest
 LEVIN2GO,UIC Levin2Go#ATN,,,DE,UIC Tempest
-LAG LIGHTNING,LAG Lightning#Uzi,,,DE,UIC Tempest
+LIGHTNING,UIC Lightning#Uzi,,,DE,UIC Tempest
 PHÂNTOX,UIC Phântox#ATN,,,DE,UIC Tempest
 RYU PANDA,UIC Ryu Panda#CSX,,,DE,UIC Tempest
 ,,,,,
@@ -104,4 +102,6 @@ RECORD,UIC ReCord#Cedo,,,DE,Community
 GOKU,UIC Goku#UIC,,,DE,Community
 KUROKO SEIRIN,Kuroko Seirin#Pass,,,DE,Community
 BL4CKPINKFAN,BL4CKPINKFAN#FLOW,,,DE,Community
+FROZENHANDS,UIC FrozenHands#MID,,,DE,Community
+SHENYCRANE,UIC Shenycrane#Vugel,,,DE,Community
 DRAGONFLY,RD Dragonfly#UIC,,,DE,Community
