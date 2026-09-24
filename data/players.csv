@@ -36,7 +36,7 @@ ALEXANDER,UIC Alexander#UIC,,,DE,UIC Dynasty
 ,,,,,
 STAFFERL,UIC Stafferl#FNC,,,DE,UIC Eclipse
 NAIRADAWSM,UIC NairadAwsm#UIC,,,DE,UIC Eclipse
-REGENTROPFEN,UIC Regentropfen#H2O,,,DE,UIC Eclipse
+RELLIK,UIC Rellik#CYS,,,DE,UIC Eclipse
 PFERDEMILCH,UIC Pferdemilch#Milch,,,DE,UIC Eclipse
 SOMALISCHERLP,SomalischerLP#Pirat,,,DE,UIC Eclipse
 ,,,,,
@@ -64,8 +64,10 @@ CERBERUS,UIC Cerberus#GOATZ,,,DE,UIC Phoenix
 ,,,,,
 DANY,UIC DANY#RFA40,,,DE,UIC Cyber
 ÐĂRKØ,UIC Ðărkø#SAI,,,DE,UIC Cyber
-RELLIK,UIC Rellik#CYS,,,DE,UIC Cyber
+XAUBERDAVE,xauberdave#dlmd,,,DE,UIC Cyber
 PJURE,UIC Pjure#CYS,,,DE,UIC Cyber
+PAVUS,Pavus#Zephr,,,DE,UIC Cyber
+ASKIR,Askir#Jhin,,,DE,UIC Cyber
 PANDA,UIC Panda#CSX,,,DE,UIC Cyber
 ,,,,,
 SCHLNKEN,UIC Schlnken#UIC,,,DE,UIC Raiders
